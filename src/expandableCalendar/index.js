@@ -408,7 +408,7 @@ class ExpandableCalendar extends Component {
         style={[this.style.header, {height: HEADER_HEIGHT, top: this.state.headerDeltaY}]}
         pointerEvents={'none'}
       >
-        <Text allowFontScaling={false} style={this.style.headerTitle}>{monthYear}</Text>
+        <Text allowFontScaling={false} style={{textAlign:'left'}}>{monthYear}</Text>
         {this.renderWeekDaysNames()}
       </Animated.View>
     );
